@@ -149,14 +149,15 @@ const ball = Bodies.circle(unitLengthX / 2, unitLengthY / 2, Math.min(unitLength
 World.add(world, ball);
 document.addEventListener('keydown', (e) => {
 	const { x, y } = ball.velocity;
+	const initSpeed = 3;
 	if (e.keyCode === 87) {
-		Body.setVelocity(ball, { x, y: y - 3 });
+		Body.setVelocity(ball, { x, y: y - initSpeed });
 	} else if (e.keyCode === 65) {
-		Body.setVelocity(ball, { x: x - 3, y });
+		Body.setVelocity(ball, { x: x - initSpeed, y });
 	} else if (e.keyCode === 68) {
-		Body.setVelocity(ball, { x: x + 3, y });
+		Body.setVelocity(ball, { x: x + initSpeed, y });
 	} else if (e.keyCode === 83) {
-		Body.setVelocity(ball, { x, y: y + 3 });
+		Body.setVelocity(ball, { x, y: y + initSpeed });
 	}
 });
 
