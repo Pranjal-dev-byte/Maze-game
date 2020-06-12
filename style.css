@@ -33,7 +33,7 @@ canvas {
 	justify-content: space-around;
 	align-items: center;
 	animation: animation 1s ease-in forwards;
-	box-shadow: 10px 20px 30px hsl(4, 3%, 3%);
+	box-shadow: 10px 19px 30px hsl(4, 3%, 3%);
 	border-radius: 10px;
 }
 .restart {
