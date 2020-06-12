@@ -1,12 +1,12 @@
 const { Engine, Runner, Bodies, World, Render, Body, Events } = Matter;
-const horizontalCells = 13;
-const verticalCells = 14;
+const horizontalCells = 3;
+const verticalCells = 4;
 const width = window.innerWidth;
 const height = window.innerHeight;
 const unitLengthX = width / horizontalCells;
 const unitLengthY = height / verticalCells;
 const engine = Engine.create();
-//engine.world.gravity.y = 0;       //To enable/disable gravity for the ball comment/uncomment
+//engine.world.gravity.y = 0;       //To enable/disable gravity for the ball
 const { world } = engine;
 const render = Render.create({
 	element: document.body,
