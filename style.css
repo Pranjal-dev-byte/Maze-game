@@ -6,7 +6,6 @@ body {
 	color: aliceblue;
 	text-align: center;
 }
-
 canvas {
 	position: relative;
 	height: 90vh;
@@ -34,10 +33,12 @@ canvas {
 	align-items: center;
 	animation: animation 1s ease-in forwards;
 	box-shadow: 10px 19px 30px hsl(4, 3%, 3%);
-	border-radius: 10px;
+	border-radius: 4px;
 }
 .restart {
 	cursor: pointer;
+	border-radius: 4px;
+	box-shadow: 4px 4px 5px black;
 }
 .winner h1 {
 	margin-bottom: 0;
